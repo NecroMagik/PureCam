@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Обработка кадра"
+        android:layout="@layout/preference_category_layout">
+
+        <ListPreference
+            android:key="capture_mode"
+            android:title="Режим съемки"
+            android:summary="Выберите режим обработки"
+            android:entries="@array/capture_modes"
+            android:entryValues="@array/capture_modes_values"
+            android:defaultValue="natural"
+            android:icon="@android:drawable/ic_menu_camera" />
+
+        <SwitchPreferenceCompat
+            android:key="flash_mode"
+            android:title="Автовспышка"
+            android:summary="Автоматическое определение необходимости вспышки"
+            android:defaultValue="true"
+            android:icon="@android:drawable/ic_menu_edit" />
+
+        <SwitchPreferenceCompat
+            android:key="hdr_mode"
+            android:title="HDR режим"
+            android:summary="Улучшение динамического диапазона (может увеличить время обработки)"
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_menu_gallery" />
+
+        <EditTextPreference
+            android:key="jpeg_quality"
+            android:title="Качество JPEG"
+            android:summary="Уровень сжатия (1-100)"
+            android:defaultValue="95"
+            android:inputType="number"
+            android:icon="@android:drawable/ic_menu_edit" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Формат видоискателя"
+        android:layout="@layout/preference_category_layout">
+
+        <ListPreference
+            android:key="aspect_ratio"
+            android:title="Соотношение сторон"
+            android:summary="Формат отображения"
+            android:entries="@array/aspect_ratios"
+            android:entryValues="@array/aspect_ratios_values"
+            android:defaultValue="16_9"
+            android:icon="@android:drawable/ic_menu_view" />
+
+        <ListPreference
+            android:key="preview_scale"
+            android:title="Масштабирование"
+            android:summary="Способ отображения превью"
+            android:entries="@array/scale_types"
+            android:entryValues="@array/scale_types_values"
+            android:defaultValue="fit_center"
+            android:icon="@android:drawable/ic_menu_crop" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Информация о приложении"
+        android:layout="@layout/preference_category_layout">
+
+        <Preference
+            android:key="version"
+            android:title="Версия"
+            android:icon="@android:drawable/ic_menu_info_details" />
+
+        <Preference
+            android:key="developer_info"
+            android:title="Разработчик"
+            android:summary="ZeNi Games\nTelegram: @NecroMagik"
+            android:icon="@android:drawable/ic_menu_my_calendar" />
+
+        <Preference
+            android:key="theme_info"
+            android:title="Тема оформления"
+            android:summary="Следует за системной темой"
+            android:icon="@android:drawable/ic_menu_preferences" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

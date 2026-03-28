@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="capture_modes">
+        <item>Натуральный (без обработки)</item>
+        <item>Нейтральный</item>
+        <item>Портрет</item>
+        <item>Пейзаж</item>
+    </string-array>
+
+    <string-array name="capture_modes_values">
+        <item>natural</item>
+        <item>neutral</item>
+        <item>portrait</item>
+        <item>landscape</item>
+    </string-array>
+
+    <string-array name="aspect_ratios">
+        <item>1:1 (Квадрат)</item>
+        <item>4:3 (Стандарт)</item>
+        <item>16:9 (Широкий)</item>
+        <item>Полный экран</item>
+    </string-array>
+
+    <string-array name="aspect_ratios_values">
+        <item>1_1</item>
+        <item>4_3</item>
+        <item>16_9</item>
+        <item>full</item>
+    </string-array>
+
+    <string-array name="scale_types">
+        <item>По центру</item>
+        <item>Заполнить</item>
+        <item>Растянуть</item>
+    </string-array>
+
+    <string-array name="scale_types_values">
+        <item>fit_center</item>
+        <item>fill_center</item>
+        <item>fill</item>
+    </string-array>
+</resources>
