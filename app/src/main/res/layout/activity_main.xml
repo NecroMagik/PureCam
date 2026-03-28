@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Camera Preview -->
-    <androidx.camera.view.PreviewView
-        android:id="@+id/previewView"
+    <!-- Camera Preview (TextureView для Camera2) -->
+    <TextureView
+        android:id="@+id/textureView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -269,13 +269,13 @@
 
     </LinearLayout>
 
-    <!-- Панель зума (плавный слайдер) -->
+    <!-- Панель зума -->
     <SeekBar
         android:id="@+id/zoomSlider"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
-        android:progress="50"
+        android:progress="0"
         android:max="100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -302,7 +302,7 @@
         android:layout_height="72dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/circle_button"
-        android:text="📸"
+        android:text=""
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/zoomSlider"
         app:layout_constraintEnd_toEndOf="parent"
