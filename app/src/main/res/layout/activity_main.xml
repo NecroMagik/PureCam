@@ -296,13 +296,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Кнопка съемки -->
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/captureButton"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/circle_button"
-        android:text="📸"
+        android:text=""
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/zoomSlider"
         app:layout_constraintEnd_toEndOf="parent"
